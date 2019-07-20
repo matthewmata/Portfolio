@@ -1,8 +1,12 @@
 // Colors
-$background-grey: #3a373a;
+$clouds: #ecf0f1;
+// $blue: #2196F3;
+// $lightBlue: #41a5f5;
+$blueGrey: #263238;
 
 body {
   margin: 0;
   padding: 0;
-  background-color: $background-grey;
+  background-color: $blueGrey;
+  font-family: "Helvetica Neue";
 }

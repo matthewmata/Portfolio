@@ -1,17 +1,16 @@
 // Colors
-$white: #fff;
-$background-grey: #3a373a;
-$gmail-red: #d44638;
+$clouds: #ecf0f1;
+$blueGrey: #263238;
 
 %links-shared {
   text-decoration: none;
 
   &:link {
-    color: $white;
+    color: $clouds;
   }
   
   &:visited {
-    color: $white;
+    color: $clouds;
   }
 
 }
@@ -21,11 +20,10 @@ $gmail-red: #d44638;
   background-image: linear-gradient(rgba(52, 45, 39, 0.7), rgba(52, 45, 39, 0.7)), url(./imgs/cover-picture.jpg);
   background-size: cover;
   height: 85vh;
-  overflow: auto;
 }
 
 .mainTextBox {
-  padding: 200px 0 150px 0;
+  padding: 10% 0 5% 0;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -35,20 +33,20 @@ $gmail-red: #d44638;
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 63px;
-  color: $white;
+  color: $clouds;
 }
 
 .titleText {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 42px;
-  color: $white;
+  color: $clouds;
 }
 
 .separator {
   margin-top: 20px;
   margin-bottom: 60px;
-  border-top: 3px solid rgba(255, 255, 255, 0.75);
+  border-top: 3px solid $clouds;
   width: 25%;
 }
 
@@ -58,9 +56,10 @@ $gmail-red: #d44638;
   opacity: 0.8;
   border-radius: 6px;
   text-transform: uppercase;
-  border: 1.2px solid rgba(255, 255, 255, 0.5);
+  border: 1.2px solid $clouds;
   &:hover {
-    background-color: $gmail-red;
+    background-color: $blueGrey;
+    transition: 0.5s;
   }
 }
 
@@ -86,8 +85,44 @@ $gmail-red: #d44638;
   }
 }
 
+
+.github {
+  &:hover {
+    fill: #913399;
+    transition: 0.3s;
+  }
+}
+
+.linkedIn {
+  &:hover {
+    fill: #0E76A8;
+    transition: 0.3s;
+  }
+}
+
+.resume {
+  &:hover {
+    fill: #FF9800;
+    transition: 0.3s;
+  }
+}
+
+.email {
+  &:hover {
+    fill: #D44638;
+    transition: 0.3s;
+  }
+}
+
 .mainNav {
   padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 17%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -95,13 +130,19 @@ $gmail-red: #d44638;
   li {
     list-style: none;
     font-size: 20px;
-    margin: 0 30px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 0 35px;
 
     a {
       @extend %links-shared;
+      white-space: nowrap;
+
+      &:hover {
+        border-bottom: 2px solid $clouds;
+        padding-bottom: 2px;
+        transition: border-bottom 0.5s;
+      }
+
     }
+
   }
-  
 }
