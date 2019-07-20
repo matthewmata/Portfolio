@@ -1,21 +1,24 @@
-const path = require("path");
+const path = require('path');
+
+const SRC_DIR = path.join(__dirname, 'client/src');
+const DIST_DIR = path.join(__dirname, 'client/dist');
 const combinedLoaders = require('webpack-combine-loaders');
 
 module.exports = {
-  entry: path.resolve(__dirname, "./client/src"),
+  mode: 'development',
+  entry: `${SRC_DIR}/index.jsx`,
   output: {
-    path: path.resolve(__dirname, "./client/dist"),
-    filename: "bundle.js"
+    filename: 'bundle.js',
+    path: DIST_DIR
   },
-  mode: "development",
   module: {
     rules: [
       {
-        loader: "babel-loader",
-        test: /\.js[x]?/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
+        loader: 'babel-loader',
         options: {
-          presets: ["@babel/preset-env", "@babel/preset-react"]
+          presets: ['@babel/preset-env', '@babel/preset-react']
         }
       },
       {
@@ -41,18 +44,16 @@ module.exports = {
         loader: 'svg-inline-loader'
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(woff|woff2|eot|ttf|otf|png|jpe?g|gif)$/,
         use: [{
           loader: 'file-loader',
           options: {
               name: '[name].[ext]',
-              outputPath: 'fonts/'
+              outputPath: 'imgs/'
           }
         }]
       },
+      
     ]
-  },
-  resolve: {
-    extensions: [".js", ".jsx"]
   }
-};
+}
