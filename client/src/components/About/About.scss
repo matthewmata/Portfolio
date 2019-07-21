@@ -1,3 +1,50 @@
+// Colors
+$clouds: #ecf0f1;
+
 .mainContainer {
-  height: 70vh;
+  height: 75vh;
+  padding-top: 3.5%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  color: $clouds;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.separator {
+  border: 0;
+  border-top: 5px solid #37474F;
+  padding: 0;
+  margin: 65px 60px 0 60px;
+  width: 25%;
+}
+
+.firstSentence {
+  color: $clouds;
+  font-size: 30px;
+  margin: 0 200px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.paragraph {
+  color: $clouds;
+  font-size: 20px;
+  margin: 50px 300px 0 40px;
+  line-height: 1.6;
+}
+
+.profilePic {
+  height: 300px;
+  width: auto;
+  margin-left: 25%;
+  margin-top: 20px;
 }

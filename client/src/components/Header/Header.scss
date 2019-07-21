@@ -1,6 +1,9 @@
 // Colors
 $clouds: #ecf0f1;
-$blueGrey: #263238;
+$github-purple: #913399;
+$linkedIn-blue: #0E76A8;
+$resume-orange: #FF9800;
+$gmail-red: #D44638;
 
 %links-shared {
   text-decoration: none;
@@ -58,8 +61,8 @@ $blueGrey: #263238;
   text-transform: uppercase;
   border: 1.2px solid $clouds;
   &:hover {
-    background-color: $blueGrey;
-    transition: 0.5s;
+    background-color: $gmail-red;
+    transition: 0.3s;
   }
 }
 
@@ -88,28 +91,28 @@ $blueGrey: #263238;
 
 .github {
   &:hover {
-    fill: #913399;
+    fill: $github-purple;
     transition: 0.3s;
   }
 }
 
 .linkedIn {
   &:hover {
-    fill: #0E76A8;
+    fill: $linkedIn-blue;
     transition: 0.3s;
   }
 }
 
 .resume {
   &:hover {
-    fill: #FF9800;
+    fill: $resume-orange;
     transition: 0.3s;
   }
 }
 
 .email {
   &:hover {
-    fill: #D44638;
+    fill: $gmail-red;
     transition: 0.3s;
   }
 }
@@ -139,7 +142,7 @@ $blueGrey: #263238;
       &:hover {
         border-bottom: 2px solid $clouds;
         padding-bottom: 2px;
-        transition: border-bottom 0.5s;
+        transition: border-bottom 0.3s;
       }
 
     }
