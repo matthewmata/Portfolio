@@ -1,7 +1,7 @@
 // Colors
 $clouds: #ecf0f1;
-
-.mainContainer {
+$hr-black: #37474F;
+.aboutContainer {
   height: 75vh;
   padding-top: 3.5%;
 }
@@ -21,7 +21,7 @@ $clouds: #ecf0f1;
 
 .separator {
   border: 0;
-  border-top: 5px solid #37474F;
+  border-top: 5px solid $hr-black;
   padding: 0;
   margin: 65px 60px 0 60px;
   width: 25%;
