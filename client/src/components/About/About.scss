@@ -1,6 +1,7 @@
 // Colors
 $clouds: #ecf0f1;
-$hr-black: #37474F;
+$hr-black: #2b292b;
+
 .aboutContainer {
   height: 75vh;
   padding-top: 3.5%;
@@ -30,16 +31,17 @@ $hr-black: #37474F;
 .firstSentence {
   color: $clouds;
   font-size: 30px;
-  margin: 0 200px;
+  min-width: 661px;
+  margin: 0 9%;
   text-align: center;
-  white-space: nowrap;
 }
 
 .paragraph {
   color: $clouds;
   font-size: 20px;
-  margin: 50px 300px 0 40px;
+  margin: 2% 15% 4% 75px;
   line-height: 1.6;
+  min-width: 378px;
 }
 
 .profilePic {

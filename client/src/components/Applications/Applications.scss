@@ -1,7 +1,65 @@
-$background-amber: #FFB300;
+$background-linen: #f7ede0;
+$clouds: #ecf0f1;
+// $darkSlateGrey: #454345;
 
 .applicationsContainer {
-  height: 75vh;
-  padding-top: 3.5%;
-  background-color: $background-amber;
+  // height: 75vh;
+  padding: 3.5% 0 3.5% 0;
+  background-color: $background-linen;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.title {
+  text-align: center;
+  // color: $darkSlateGrey;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.separator {
+  border: 0;
+  border-top: 5px solid rgba(0, 0, 0, 0.25);
+  padding: 0;
+  margin: 65px 60px 0 60px;
+  width: 25%;
+}
+
+.divider {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  width: 68.5%;
+}
+
+.image {
+  height: 400px;
+  width: 500px;
+  margin-right: 75px;
+}
+
+.projectDescriptionBox {
+  width: 500px;
+  h2 {
+    font-size: 42px;
+    // color: $darkSlateGrey;
+    margin: 50px 0 0 0;
+  }
+  h3 {
+    font-size: 20px;
+    // color: $darkSlateGrey;
+    margin: 10px 0 0 0;
+  }
+  p {
+    font-size: 17px;
+    // color: $darkSlateGrey;
+    margin: 10px 0 0 0;
+  }
+}
+
