@@ -3,6 +3,7 @@ import style from './App.scss';
 import Header from '../Header/Header.jsx';
 import About from '../About/About.jsx';
 import Applications from '../Applications/Applications.jsx';
+import TechStack from '../TechStack/TechStack.jsx'
 
 export default class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ export default class App extends Component {
         <Header/>
         <About/>
         <Applications/>
+        <TechStack/>
       </div>
     )
   }
