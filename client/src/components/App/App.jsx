@@ -4,6 +4,7 @@ import Header from '../Header/Header.jsx';
 import About from '../About/About.jsx';
 import Applications from '../Applications/Applications.jsx';
 import TechStack from '../TechStack/TechStack.jsx'
+import ContactMe from '../ContactMe/ContactMe.jsx'
 
 export default class App extends Component {
   constructor(props) {
@@ -18,6 +19,7 @@ export default class App extends Component {
         <About/>
         <Applications/>
         <TechStack/>
+        <ContactMe/>
       </div>
     )
   }

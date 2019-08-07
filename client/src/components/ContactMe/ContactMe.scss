@@ -1,0 +1,129 @@
+// Colors
+$clouds: #ecf0f1;
+$github-purple: #913399;
+$linkedIn-blue: #0E76A8;
+$resume-orange: #FF9800;
+$gmail-red: #D44638;
+$hr-black: #2b292b;
+
+%links-shared {
+  text-decoration: none;
+
+  &:link {
+    color: $clouds;
+  }
+  
+  &:visited {
+    color: $clouds;
+  }
+
+}
+
+
+.contactMeContainer {
+  padding: 3.5% 0 3.5% 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  color: $clouds;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.separator {
+  border: 0;
+  border-top: 5px solid $hr-black;
+  padding: 0;
+  margin: 65px 60px 0 60px;
+  width: 25%;
+}
+
+.mainTextBox {
+  // padding: 10% 0 5% 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.sentence {
+  color: $clouds;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.contactMeBox {
+  @extend %links-shared;
+  padding: 10px 30px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  border: 1.2px solid $clouds;
+  &:hover {
+    background-color: $gmail-red;
+    transition: 0.3s;
+  }
+}
+
+.contactMeIcon {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.iconLinkList {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  li {
+    list-style: none;
+    font-size: 60px;
+    margin: 0 20px;
+
+    a {
+      @extend %links-shared;
+    }
+  }
+}
+
+
+.github {
+  &:hover {
+    fill: $github-purple;
+    transition: 0.3s;
+  }
+}
+
+.linkedIn {
+  &:hover {
+    fill: $linkedIn-blue;
+    transition: 0.3s;
+  }
+}
+
+.resume {
+  &:hover {
+    fill: $resume-orange;
+    transition: 0.3s;
+  }
+}
+
+.email {
+  &:hover {
+    fill: $gmail-red;
+    transition: 0.3s;
+  }
+}
+
+.footerNote {
+  text-align: center;
+  color: $clouds;
+  font-size: 12px;
+}
