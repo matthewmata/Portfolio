@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import style from './About.scss';
-import profilePic from './imgs/hedgehog.jpg'
+import profilePic from './imgs/profile-pic.jpg'
 
 export default class About extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {};
   }
 
   render() {
+    
     return (
-      <section className={style.aboutContainer}>
+      <section className={style.aboutContainer} id="about">
         <span className={style.row}>
           <hr className={style.separator}/>
           <h3 className={style.title}>

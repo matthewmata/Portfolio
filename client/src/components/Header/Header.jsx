@@ -5,11 +5,33 @@ export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+
+    this.handleScroll = this.handleScroll.bind(this);
+    this.handleNavClick = this.handleNavClick.bind(this);
+  }
+
+  componentDidMount() {
+    const nav = document.querySelector('nav');
+    const about = document.getElementById("about");
+    this.setState({ top: about.offsetTop - 50 });
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+      
+  handleScroll() {
+    this.setState({scroll: window.scrollY}, () => console.log("windowScrollY :", window.scrollY));
+  }
+
+  handleNavClick(e, name) {
+    e.preventDefault();
+    const top = document.getElementById(name).offsetTop;
+    window.scroll({ top, left: 0, behavior: 'smooth' })
   }
 
   render() {
+
     return (
-      <header className={style.headerContainer}>
+      <header className={style.headerContainer} id="home">
         <div className={style.mainTextBox}>
           <h1 className={style.nameText}>
             Matthew Mata
@@ -18,7 +40,7 @@ export default class Header extends Component {
             Full Stack Software Engineer
           </h2>
           <hr className={style.separator}/>
-          <a href='#' className={style.contactMeBox}>
+          <a href='mailto:matthewmata151@gmail.com' className={style.contactMeBox}>
             <span className={style.contactMeIcon}>
               <ion-icon name="mail"/>
             </span>
@@ -47,20 +69,20 @@ export default class Header extends Component {
               </a>
             </li>
             <li>
-              <a href='#' target="_blank">
+              <a href='mailto:matthewmata151@gmail.com'>
                 <svg width="60px" height="60px" fill="#fff" viewBox="0 0 512 512" className={style.email}>
                   <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/>
                 </svg>
               </a>
             </li>
           </ul>
-          <nav>
-            <ul className={style.mainNav}>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#applications">Applications</a></li>
-              <li><a href="#tech-stack">Tech Stack</a></li>
-              <li><a href="#contact-me">Contact Me</a></li>
+          <nav className={this.state.scroll > this.state.top ? style.stickyNav : style.staticNav}>
+            <ul>
+              <li onClick={(e) => this.handleNavClick(e, "home")}><a href="#home">Home</a></li>
+              <li onClick={(e) => this.handleNavClick(e, "about")}><a href="#about">About</a></li>
+              <li onClick={(e) => this.handleNavClick(e, "applications")}><a href="#applications">Applications</a></li>
+              <li onClick={(e) => this.handleNavClick(e, "techStack")}><a href="#techStack">Tech Stack</a></li>
+              <li onClick={(e) => this.handleNavClick(e, "contactMe")}><a href="#contactMe">Contact Me</a></li>
             </ul>
           </nav>
         </div>
