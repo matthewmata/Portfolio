@@ -44,12 +44,12 @@ $clouds: #ecf0f1;
   margin-right: 50px;
 }
 
-.projectDescriptionBox {
+.projectDescriptionBoxWePlay {
   width: 500px;
   h2 {
     font-size: 42px;
     // color: $darkSlateGrey;
-    margin: 50px 0 0 0;
+    margin: 35px 0 0 0;
     span {
       font-size: 15px;
       font-style: italic;
@@ -68,6 +68,53 @@ $clouds: #ecf0f1;
   }
 }
 
+.projectDescriptionBoxGrubhub {
+  width: 500px;
+  h2 {
+    font-size: 42px;
+    // color: $darkSlateGrey;
+    margin: 10px 0 0 0;
+    span {
+      font-size: 15px;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+  }
+  h3 {
+    font-size: 20px;
+    // color: $darkSlateGrey;
+    margin: 10px 0 0 0;
+  }
+  p {
+    font-size: 17px;
+    // color: $darkSlateGrey;
+    margin: 10px 0 0 0;
+  }
+}
+
+.projectDescriptionBoxNordstrom {
+  width: 500px;
+  h2 {
+    font-size: 42px;
+    // color: $darkSlateGrey;
+    margin: 20px 0 0 0;
+    span {
+      font-size: 15px;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+  }
+  h3 {
+    font-size: 20px;
+    // color: $darkSlateGrey;
+    margin: 10px 0 0 0;
+  }
+  p {
+    font-size: 17px;
+    // color: $darkSlateGrey;
+    margin: 10px 0 0 0;
+  }
+}
 .applicationsBox {
   margin-bottom: 75px;
 }

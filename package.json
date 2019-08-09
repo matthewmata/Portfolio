@@ -4,8 +4,10 @@
   "description": "Best Portfolio in the business",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server",
-    "build": "webpack -w"
+    "dev:start": "nodemon server",
+    "dev:build": "webpack -w -d",
+    "build": "webpack -p",
+    "start": "node server/index.js"
   },
   "keywords": [],
   "author": "",
