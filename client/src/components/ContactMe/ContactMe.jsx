@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import style from './ContactMe.scss';
-import resume from '../Header/imgs/resume.pdf';
+import resume from '../Header/imgs/Resume.pdf';
 
 export default class ContactMe extends Component {
   constructor(props) {
