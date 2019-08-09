@@ -13,7 +13,7 @@ export default class Applications extends Component {
   render() {
     return (
       <section className={style.applicationsContainer} id="applications">
-        <div>
+        <div className={style.titleBox}>
           <span className={style.row}>
             <hr className={style.separator}/>
             <h3 className={style.title}>
@@ -24,7 +24,7 @@ export default class Applications extends Component {
         </div>
         <div className={style.applicationsBox}>  
           <div className={style.row}>
-            <img className={style.image} src={weplay}></img>
+            <img className={style.imageLeft} src={weplay}></img>
             <div className={style.projectDescriptionBoxWePlay}>
               <h2>
                 WePlay 
@@ -38,7 +38,7 @@ export default class Applications extends Component {
           </div>
           <hr className={style.divider}/>
           <div className={style.row}>
-          <img className={style.image} src={grubhub}></img>
+            {/* <img className={style.image} src={grubhub}></img> */}
             <div className={style.projectDescriptionBoxGrubhub}>
               <h2>
                 Grubhub
@@ -49,10 +49,11 @@ export default class Applications extends Component {
               </h3>
               <p> Worked on the backend of a clone of Grubhub, where I benchmarked query times of 10 million records between two DBMS (MongoDB & PostgreSQL) via Artillery and selected the more optimized DBMS based on query execution times. I reduced restaurant details database query execution time from 95000 ms to 15 ms through the use of single key indexing and caching. I increased RPS from 500 to 5500 with 0% error rate by horizontal scaling via  Least Connection load balancing and 4 AWS EC2 Server Instances.</p>
             </div>
+            <img className={style.imageRight} src={grubhub}></img>
           </div>
           <hr className={style.divider}/>
           <div className={style.row}>
-            <img className={style.image} src={nordstrom}></img>
+            <img className={style.imageLeft} src={nordstrom}></img>
             <div className={style.projectDescriptionBoxNordstrom}>
               <h2>
                 Nordstrom

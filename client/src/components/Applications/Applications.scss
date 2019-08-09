@@ -8,6 +8,10 @@ $clouds: #ecf0f1;
   background-color: $background-linen;
 }
 
+.titleBox {
+  margin-bottom: 30px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -38,14 +42,21 @@ $clouds: #ecf0f1;
   width: 68.5%;
 }
 
-.image {
+.imageLeft {
   height: 309px;
   width: 550px;
-  margin-right: 50px;
+  margin-right: 5%;
+}
+
+.imageRight {
+  height: 309px;
+  width: 550px;
+  margin-left: 5%;
 }
 
 .projectDescriptionBoxWePlay {
   width: 500px;
+  min-width: 500px;
   h2 {
     font-size: 42px;
     // color: $darkSlateGrey;
@@ -65,11 +76,14 @@ $clouds: #ecf0f1;
     font-size: 17px;
     // color: $darkSlateGrey;
     margin: 10px 0 0 0;
+
   }
 }
 
 .projectDescriptionBoxGrubhub {
   width: 500px;
+  min-width: 500px;
+  margin: 0 1.5% 0 3%;
   h2 {
     font-size: 42px;
     // color: $darkSlateGrey;
@@ -94,6 +108,7 @@ $clouds: #ecf0f1;
 
 .projectDescriptionBoxNordstrom {
   width: 500px;
+  min-width: 500px;
   h2 {
     font-size: 42px;
     // color: $darkSlateGrey;

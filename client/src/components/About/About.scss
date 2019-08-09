@@ -1,10 +1,12 @@
 // Colors
 $clouds: #ecf0f1;
 $hr-black: #2b292b;
+$background-color: #C5CAE9;
+$background-aqua: #7fb0a6;
 
 .aboutContainer {
-  height: 75vh;
-  padding-top: 3.5%;
+  padding: 3.5% 0;
+  background-color: $background-color;
 }
 
 .row {
@@ -15,21 +17,21 @@ $hr-black: #2b292b;
 
 .title {
   text-align: center;
-  color: $clouds;
+  // color: $clouds;
   font-size: 42px;
   margin-bottom: 10px;
 }
 
 .separator {
   border: 0;
-  border-top: 5px solid $hr-black;
+  border-top: 5px solid rgba(0, 0, 0, 0.25);
   padding: 0;
   margin: 65px 60px 0 60px;
   width: 25%;
 }
 
 .firstSentence {
-  color: $clouds;
+  // color: $clouds;
   font-size: 30px;
   min-width: 661px;
   margin: 0 9%;
@@ -37,7 +39,7 @@ $hr-black: #2b292b;
 }
 
 .paragraph {
-  color: $clouds;
+  // color: $clouds;
   font-size: 20px;
   margin: 2% 15% 4% 75px;
   line-height: 1.6;
@@ -47,6 +49,6 @@ $hr-black: #2b292b;
 .profilePic {
   height: 300px;
   width: auto;
-  margin-left: 25%;
-  margin-top: 20px;
+  margin: 20px 0 50px 25%;
+
 }
