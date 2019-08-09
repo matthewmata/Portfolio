@@ -44,7 +44,7 @@ module.exports = {
         loader: 'svg-inline-loader'
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf|png|jpe?g|gif)$/,
+        test: /\.(pdf|woff|woff2|eot|ttf|otf|png|jpe?g|gif)$/,
         use: [{
           loader: 'file-loader',
           options: {

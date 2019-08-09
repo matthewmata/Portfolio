@@ -33,7 +33,7 @@ export default class Applications extends Component {
               <h3>
               React-Native | Express | MySQL | Sequelize | Expo
               </h3>
-              <p>Mobile application where users can join various sports matches based on user’s geo-location. I built and styled the account component which included functionality to edit profile information in the database and to view all events the user signed up for. I also help set up account creation and user verification via Facebook Open Authentication</p>
+              <p>Mobile application where users can join various sports matches based on user’s geo-location. I built and styled the account component which included functionality to edit profile information in the database and to view all events the user signed up for. I also help set up account creation and user verification via Facebook Open Authentication.</p>
             </div>
           </div>
           <hr className={style.divider}/>
