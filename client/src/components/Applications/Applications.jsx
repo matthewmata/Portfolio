@@ -24,7 +24,7 @@ export default class Applications extends Component {
         </div>
         <div className={style.applicationsBox}>  
           <div className={style.row}>
-            <img className={style.imageLeft} src={weplay}></img>
+            <img className={style.imageLeft} src={weplay} loading="lazy"></img>
             <div className={style.projectDescriptionBoxWePlay}>
               <h2>
                 WePlay 
@@ -33,12 +33,19 @@ export default class Applications extends Component {
               <h3>
               React-Native | Express | MySQL | Sequelize | Expo
               </h3>
-              <p>Mobile application where users can join various sports matches based on user’s geo-location. I built and styled the account component which included functionality to edit profile information in the database and to view all events the user signed up for. I also help set up account creation and user verification via Facebook Open Authentication.</p>
+              <p>
+                ● Mobile application where users can join various sports matches based on user’s geo-location
+              </p>
+              <p>
+                ● Built and styled account component which included functionality to edit profile information in the database and to view all events the user signed up for
+              </p>
+              <p>
+                ● Set up account creation and user verification via Facebook Open Authentication
+              </p>
             </div>
           </div>
           <hr className={style.divider}/>
           <div className={style.row}>
-            {/* <img className={style.image} src={grubhub}></img> */}
             <div className={style.projectDescriptionBoxGrubhub}>
               <h2>
                 Grubhub
@@ -47,13 +54,20 @@ export default class Applications extends Component {
               <h3>
               Express | MongoDB | Redis | Nginx | AWS EC2
               </h3>
-              <p> Worked on the backend of a clone of Grubhub, where I benchmarked query times of 10 million records between two DBMS (MongoDB & PostgreSQL) via Artillery and selected the more optimized DBMS based on query execution times. I reduced restaurant details database query execution time from 95000 ms to 15 ms through the use of single key indexing and caching. I increased RPS from 500 to 5500 with 0% error rate by horizontal scaling via  Least Connection load balancing and 4 AWS EC2 Server Instances.</p>
+              <p>● Benchmarked query times of 10 million records between two DBMS (MongoDB & PostgreSQL) via Artillery and selected the more optimized DBMS based on query execution times
+              </p>
+              <p>
+              ● Reduced restaurant details database query execution time from 95000 ms to 15 ms through the use of single key indexing and caching
+              </p>
+              <p>
+              ● Increased RPS from 500 to 5500 with 0% error rate by horizontal scaling via Least Connection load balancing and 4 AWS EC2 Server Instances
+              </p>
             </div>
-            <img className={style.imageRight} src={grubhub}></img>
+            <img className={style.imageRight} src={grubhub} loading="lazy"></img>
           </div>
           <hr className={style.divider}/>
           <div className={style.row}>
-            <img className={style.imageLeft} src={nordstrom}></img>
+            <img className={style.imageLeft} src={nordstrom} loading="lazy"></img>
             <div className={style.projectDescriptionBoxNordstrom}>
               <h2>
                 Nordstrom
@@ -62,7 +76,15 @@ export default class Applications extends Component {
               <h3>
               React | CSS Modules | Express | MongoDB
               </h3>
-              <p> Created the front end for a clone of Nordstrom's website, where I built the main product description section which included image sliding carousels which mimicked the styling and logic of the actual Nordstrom website. I implemented a Microservice Architecture for rendering multiple modular components onto a single proxy server, ensuring future scalability. I also served the static media files on a CDN via AWS S3 to ensure faster response time and latency.</p>
+              <p>
+                ● Mobile application where users can join various sports matches based on user’s geo-location
+              </p>
+              <p>
+                ● Built and styled account component which included functionality to edit profile information in the database and to view all events the user signed up for
+              </p>
+              <p>
+                ● Set up account creation and user verification via Facebook Open Authentication
+              </p>
             </div>
           </div>
         </div>
