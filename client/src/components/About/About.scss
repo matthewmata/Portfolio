@@ -15,6 +15,13 @@ $background-aqua: #7fb0a6;
   justify-content: center;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  // justify-content: center;
+}
+
 .title {
   text-align: center;
   // color: $clouds;
@@ -41,14 +48,14 @@ $background-aqua: #7fb0a6;
 .paragraph {
   // color: $clouds;
   font-size: 20px;
-  margin: 2% 15% 4% 75px;
+  margin: 2% 23% 0 5%;
   line-height: 1.6;
-  min-width: 378px;
+  min-width: 389.11px;
 }
 
 .profilePic {
   height: 300px;
   width: auto;
-  margin: 20px 0 50px 25%;
+  margin: 20px 0 50px 20%;
 
 }
