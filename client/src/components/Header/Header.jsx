@@ -20,7 +20,7 @@ export default class Header extends Component {
 
       
   handleScroll() {
-    this.setState({scroll: window.scrollY}, () => console.log("windowScrollY :", window.scrollY));
+    this.setState({scroll: window.scrollY});
   }
 
   handleNavClick(e, name) {
