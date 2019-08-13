@@ -91,13 +91,13 @@ export default class Applications extends Component {
               React | CSS Modules | Express | MongoDB
               </h3>
               <p>
-                ● Mobile application where users can join various sports matches based on user’s geo-location
+                ● Built main product description section which included image sliding carousels which mimicked the styling and logic of the actual Nordstrom website
               </p>
               <p>
-                ● Built and styled account component which included functionality to edit profile information in the database and to view all events the user signed up for
+                ● Implemented a Microservice Architecture for rendering multiple modular components onto a single proxy server, ensuring future scalability
               </p>
               <p>
-                ● Set up account creation and user verification via Facebook Open Authentication
+                ● Served static media files through a CDN via AWS S3 to ensure faster response time and latency
               </p>
               <br />
               <a href='https://github.com/tormund-and-big-lady/product-description-service' target="_blank" className={style.codeBox}>
