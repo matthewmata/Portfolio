@@ -1,6 +1,21 @@
 $background-linen: #f7ede0;
 $clouds: #ecf0f1;
+$github-purple:#CE93D8;
+$black: #000;
 // $darkSlateGrey: #454345;
+
+%links-shared {
+  text-decoration: none;
+
+  &:link {
+    color: $black;
+  }
+  
+  &:visited {
+    color: $black;
+  }
+
+}
 
 .applicationsContainer {
   // height: 75vh;
@@ -59,8 +74,7 @@ $clouds: #ecf0f1;
   min-width: 500px;
   h2 {
     font-size: 42px;
-    // color: $darkSlateGrey;
-    margin: 35px 0 0 0;
+    margin: 0 0 0 0;
     span {
       font-size: 15px;
       font-style: italic;
@@ -70,13 +84,7 @@ $clouds: #ecf0f1;
   h3 {
     font-size: 20px;
     // color: $darkSlateGrey;
-    margin: 10px 0 0 0;
-  }
-  p {
-    font-size: 17px;
-    // color: $darkSlateGrey;
-    margin: 10px 0 0 0;
-
+    margin: 0 0 0 0;
   }
 }
 
@@ -87,7 +95,7 @@ $clouds: #ecf0f1;
   h2 {
     font-size: 42px;
     // color: $darkSlateGrey;
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0;
     span {
       font-size: 15px;
       font-style: italic;
@@ -97,12 +105,7 @@ $clouds: #ecf0f1;
   h3 {
     font-size: 20px;
     // color: $darkSlateGrey;
-    margin: 10px 0 0 0;
-  }
-  p {
-    font-size: 17px;
-    // color: $darkSlateGrey;
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0;
   }
 }
 
@@ -112,7 +115,7 @@ $clouds: #ecf0f1;
   h2 {
     font-size: 42px;
     // color: $darkSlateGrey;
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
     span {
       font-size: 15px;
       font-style: italic;
@@ -122,14 +125,26 @@ $clouds: #ecf0f1;
   h3 {
     font-size: 20px;
     // color: $darkSlateGrey;
-    margin: 10px 0 0 0;
-  }
-  p {
-    font-size: 17px;
-    // color: $darkSlateGrey;
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0;
   }
 }
 .applicationsBox {
   margin-bottom: 75px;
+}
+
+.codeBox {
+  @extend %links-shared;
+  padding: 10px 30px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  border: 1.2px solid $black;
+  &:hover {
+    background-color: $github-purple;
+    transition: 0.3s;
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 14px;
 }

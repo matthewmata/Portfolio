@@ -42,6 +42,13 @@ export default class Applications extends Component {
               <p>
                 ● Set up account creation and user verification via Facebook Open Authentication
               </p>
+              <br />
+              <a href='https://github.com/matthewmata/weplay' target="_blank" className={style.codeBox}>
+                <span className={style.icon}>
+                  <ion-icon name="logo-github"/>
+                </span>
+                <span>View Code</span>
+              </a>
             </div>
           </div>
           <hr className={style.divider}/>
@@ -62,6 +69,13 @@ export default class Applications extends Component {
               <p>
               ● Increased RPS from 500 to 5500 with 0% error rate by horizontal scaling via Least Connection load balancing and 4 AWS EC2 Server Instances
               </p>
+              <br />
+              <a href='https://github.com/matthewmata/nav-about' target="_blank" className={style.codeBox}>
+                <span className={style.icon}>
+                  <ion-icon name="logo-github"/>
+                </span>
+                <span>View Code</span>
+              </a>
             </div>
             <img className={style.imageRight} src={grubhub} loading="lazy"></img>
           </div>
@@ -85,6 +99,13 @@ export default class Applications extends Component {
               <p>
                 ● Set up account creation and user verification via Facebook Open Authentication
               </p>
+              <br />
+              <a href='https://github.com/tormund-and-big-lady/product-description-service' target="_blank" className={style.codeBox}>
+                <span className={style.icon}>
+                  <ion-icon name="logo-github"/>
+                </span>
+                <span>View Code</span>
+              </a>
             </div>
           </div>
         </div>
