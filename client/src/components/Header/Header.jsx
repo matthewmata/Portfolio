@@ -17,7 +17,6 @@ export default class Header extends Component {
     this.setState({ top: about.offsetTop - 50 });
     window.addEventListener('scroll', this.handleScroll);
   }
-
       
   handleScroll() {
     this.setState({scroll: window.scrollY});
