@@ -9,7 +9,19 @@ import ContactMe from '../ContactMe/ContactMe.jsx'
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      width: 1024
+    };
+    this.handleWidth = this.handleWidth.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({ width: window.innerWidth });
+    window.addEventListener('resize', this.handleWidth);
+  }
+
+  handleWidth() {
+    this.setState({ width: window.innerWidth });
   }
 
   render() {

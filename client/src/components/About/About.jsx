@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import style from './About.scss';
 import profilePic from './imgs/profile-pic.jpg'
 
-const About = () => (
+const About = (props) => (
   <section className={style.aboutContainer} id="about">
     <span className={style.row}>
       <hr className={style.separator}/>
