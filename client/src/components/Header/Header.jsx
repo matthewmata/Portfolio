@@ -12,7 +12,6 @@ export default class Header extends Component {
   }
 
   componentDidMount() {
-    const nav = document.querySelector('nav');
     const about = document.getElementById("about");
     this.setState({ top: about.offsetTop - 50 });
     window.addEventListener('scroll', this.handleScroll);
@@ -76,6 +75,7 @@ export default class Header extends Component {
               </a>
             </li>
           </ul>
+        </div>
           <nav className={this.state.scroll > this.state.top ? style.stickyNav : style.staticNav}>
             <ul>
               <li onClick={(e) => this.handleNavClick(e, "home")}><a href="#home">Home</a></li>
@@ -85,7 +85,6 @@ export default class Header extends Component {
               <li onClick={(e) => this.handleNavClick(e, "contactMe")}><a href="#contactMe">Contact Me</a></li>
             </ul>
           </nav>
-        </div>
       </header>
     )
   }

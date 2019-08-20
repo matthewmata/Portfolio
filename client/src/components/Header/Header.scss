@@ -23,10 +23,13 @@ $gmail-red: #D44638;
   background-image: linear-gradient(rgba(46, 44, 43, 0.7), rgba(46, 44, 43, 0.7)), url(./imgs/background.gif);
   background-size: cover;
   height: 95vh;
+  display: flex;
 }
 
 .mainTextBox {
-  padding: 10% 0 5% 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
