@@ -16,7 +16,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({ width: window.innerWidth });
+    this.setState({ width: window.innerWidth }, () => console.log(this.state.width));
     window.addEventListener('resize', this.handleWidth);
   }
 
@@ -27,11 +27,11 @@ export default class App extends Component {
   render() {
     return (
       <div className={style.appContainer}>
-        <Header/>
-        <About/>
-        <Applications/>
-        <TechStack/>
-        <ContactMe/>
+        <Header width={this.state.width}/>
+        <About width={this.state.width}/>
+        <Applications width={this.state.width}/>
+        {/* <TechStack width={this.state.width}/>
+        <ContactMe width={this.state.width}/> */}
       </div>
     )
   }

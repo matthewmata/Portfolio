@@ -43,10 +43,18 @@ $gmail-red: #D44638;
 }
 
 .titleText {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 20px 10px 10px 10px;
   font-size: 42px;
   color: $clouds;
+}
+
+.smallTitleText{
+  @extend .titleText;
+  font-size: 25px;
+}
+
+.titleTextResp {
+  font-size: 30px;
 }
 
 .separator {
@@ -88,6 +96,14 @@ $gmail-red: #D44638;
     a {
       @extend %links-shared;
     }
+  }
+}
+
+.smallIconLinkList {
+  @extend .iconLinkList;
+  li {
+    font-size: 40px;
+    margin: 0 15px;
   }
 }
 

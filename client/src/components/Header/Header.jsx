@@ -35,7 +35,7 @@ export default class Header extends Component {
           <h1 className={style.nameText}>
             Matthew Mata
           </h1>
-          <h2 className={style.titleText}>
+          <h2 className={this.props.width >= 1024 ? style.titleText : style.smallTitleText}>
             Full Stack Software Engineer
           </h2>
           <hr className={style.separator}/>
@@ -45,7 +45,7 @@ export default class Header extends Component {
             </span>
             <span>contact me</span>
           </a>
-          <ul className={style.iconLinkList}>
+          <ul className={ this.props.width >= 1024 ? style.iconLinkList : style.smallIconLinkList}>
             <li>
               <a href='https://github.com/matthewmata' target="_blank">
                 <svg width="60px" height="60px" fill="#fff" viewBox="0 0 512 512" className={style.github}>
@@ -76,15 +76,17 @@ export default class Header extends Component {
             </li>
           </ul>
         </div>
+        {this.props.width >= 1024 && (
           <nav className={this.state.scroll > this.state.top ? style.stickyNav : style.staticNav}>
             <ul>
               <li onClick={(e) => this.handleNavClick(e, "home")}><a href="#home">Home</a></li>
               <li onClick={(e) => this.handleNavClick(e, "about")}><a href="#about">About</a></li>
               <li onClick={(e) => this.handleNavClick(e, "applications")}><a href="#applications">Applications</a></li>
-              <li onClick={(e) => this.handleNavClick(e, "techStack")}><a href="#techStack">Tech Stack</a></li>
-              <li onClick={(e) => this.handleNavClick(e, "contactMe")}><a href="#contactMe">Contact Me</a></li>
+              {/* <li onClick={(e) => this.handleNavClick(e, "techStack")}><a href="#techStack">Tech Stack</a></li>
+              <li onClick={(e) => this.handleNavClick(e, "contactMe")}><a href="#contactMe">Contact Me</a></li> */}
             </ul>
           </nav>
+        )}
       </header>
     )
   }

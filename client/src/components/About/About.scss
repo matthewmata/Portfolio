@@ -19,7 +19,11 @@ $background-aqua: #7fb0a6;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  // justify-content: center;
+}
+
+.smallColumn {
+  @extend .column;
+  margin-top: 5px;
 }
 
 .title {
@@ -37,6 +41,26 @@ $background-aqua: #7fb0a6;
   width: 25%;
 }
 
+.smallSeparator {
+  border: 0;
+  padding: 0;
+  border-top: 3px solid rgba(0, 0, 0, 0.25);
+  margin: 10px 10px 0 10px;
+}
+
+.smallSeparator {
+  @extend .separator;
+  margin: 95px 30px 0 30px;
+}
+
+.smallHr {
+  @extend .separator;
+  border-top: 2px solid rgba(0, 0, 0, 0.25);
+  margin: 10px auto 0 auto;
+  justify-content: center;
+  text-align: center;
+  width: 50%
+}
 .firstSentence {
   // color: $clouds;
   font-size: 30px;
@@ -53,9 +77,21 @@ $background-aqua: #7fb0a6;
   min-width: 389.11px;
 }
 
+.smallParagraph {
+  @extend .paragraph;
+  min-width: 350px;
+  text-align: center;
+  margin: 2% 10px 0 10px;
+
+}
+
 .profilePic {
   height: 300px;
   width: auto;
   margin: 20px 0 50px 20%;
+}
 
+.smallProfilePic {
+  @extend .profilePic;
+  margin: 0 auto 10px auto;
 }
