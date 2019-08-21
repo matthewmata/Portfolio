@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import style from './ContactMe.scss';
 import resume from '../Header/imgs/Resume.pdf';
 
-const ContactMe = () => (
+const ContactMe = (props) => (
   <footer className={style.contactMeContainer} id="contactMe">
     <div className={style.mainTextBox}>
       <span className={style.row}>
@@ -19,7 +19,7 @@ const ContactMe = () => (
         </span>
         <span>contact me</span>
       </a>
-      <ul className={style.iconLinkList}>
+      <ul className={props.width >= 1024 ? style.iconLinkList : style.smallIconLinkList}>
         <li>
           <a href='https://github.com/matthewmata' target="_blank">
             <svg width="60px" height="60px" fill="#fff" viewBox="0 0 512 512" className={style.github}>

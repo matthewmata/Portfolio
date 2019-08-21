@@ -82,8 +82,8 @@ export default class Header extends Component {
               <li onClick={(e) => this.handleNavClick(e, "home")}><a href="#home">Home</a></li>
               <li onClick={(e) => this.handleNavClick(e, "about")}><a href="#about">About</a></li>
               <li onClick={(e) => this.handleNavClick(e, "applications")}><a href="#applications">Applications</a></li>
-              {/* <li onClick={(e) => this.handleNavClick(e, "techStack")}><a href="#techStack">Tech Stack</a></li>
-              <li onClick={(e) => this.handleNavClick(e, "contactMe")}><a href="#contactMe">Contact Me</a></li> */}
+              <li onClick={(e) => this.handleNavClick(e, "techStack")}><a href="#techStack">Tech Stack</a></li>
+              <li onClick={(e) => this.handleNavClick(e, "contactMe")}><a href="#contactMe">Contact Me</a></li>
             </ul>
           </nav>
         )}

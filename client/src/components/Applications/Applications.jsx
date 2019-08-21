@@ -3,7 +3,6 @@ import weplay from './imgs/weplay.png'
 import grubhub from './imgs/grubhub.gif'
 import nordstrom from './imgs/nordstrom.gif';
 import style from './Applications.scss'
-
 const Applications = (props) => (
   <section className={style.applicationsContainer} id="applications">
     {props.width >= 1024 ? (
@@ -119,36 +118,12 @@ const Applications = (props) => (
         </div>
         <div className={style.smallApplicationBox}>
           <h2>
-            Grubhub
-            <span>{" "}&mdash;{` System & DBMS Optimization`}</span>
-          </h2>
-          <img className={style.image} src={grubhub}></img>
-          <h3>
-          Express | MongoDB | Redis | Nginx | AWS EC2
-          </h3>
-          <p>● Benchmarked query times of 10 million records between two DBMS (MongoDB & PostgreSQL) via Artillery and selected the more optimized DBMS based on query execution times
-          </p>
-          <p>
-          ● Reduced restaurant details database query execution time from 95000 ms to 15 ms through the use of single key indexing and caching
-          </p>
-          <p>
-          ● Increased RPS from 500 to 5500 with 0% error rate by horizontal scaling via Least Connection load balancing and 4 AWS EC2 Server Instances
-          </p>
-          <br />
-          <a href='https://github.com/matthewmata/nav-about' target="_blank" className={style.codeBox}>
-            <span className={style.icon}>
-              <ion-icon name="logo-github"/>
-            </span>
-            <span>View Code</span>
-          </a>
-        </div>
-        <hr className={style.divider}/>
-        <div className={style.smallApplicationBox}>
-          <h2>
             WePlay 
             <span>{" "}&mdash;{` Mobile Sports Pickup Game`}</span>
           </h2>
-          <img className={style.image} src={weplay}></img>
+          <img 
+          style={{marginRight: 'auto', marginLeft: 'auto', height: 'auto', width: props.width - 20}}
+          src={weplay}></img>
           <h3>
           React-Native | Express | MySQL | Sequelize | Expo
           </h3>
@@ -172,10 +147,36 @@ const Applications = (props) => (
         <hr className={style.divider}/>
         <div className={style.smallApplicationBox}>
           <h2>
+            Grubhub
+            <span>{" "}&mdash;{` System & DBMS Optimization`}</span>
+          </h2>
+          <img style={{marginRight: 'auto', marginLeft: 'auto', height: 'auto', width: props.width - 20}} src={grubhub}></img>
+          <h3>
+          Express | MongoDB | Redis | Nginx | AWS EC2
+          </h3>
+          <p>● Benchmarked query times of 10 million records between two DBMS (MongoDB & PostgreSQL) via Artillery and selected the more optimized DBMS based on query execution times
+          </p>
+          <p>
+          ● Reduced restaurant details database query execution time from 95000 ms to 15 ms through the use of single key indexing and caching
+          </p>
+          <p>
+          ● Increased RPS from 500 to 5500 with 0% error rate by horizontal scaling via Least Connection load balancing and 4 AWS EC2 Server Instances
+          </p>
+          <br />
+          <a href='https://github.com/matthewmata/nav-about' target="_blank" className={style.codeBox}>
+            <span className={style.icon}>
+              <ion-icon name="logo-github"/>
+            </span>
+            <span>View Code</span>
+          </a>
+        </div>
+        <hr className={style.divider}/>
+        <div className={style.smallApplicationBox}>
+          <h2>
             Nordstrom
             <span>{" "}&mdash;{` Web Application Clone`}</span>
           </h2>
-          <img className={style.image} src={nordstrom}></img>
+          <img style={{marginRight: 'auto', marginLeft: 'auto', height: 'auto', width: props.width - 20}} src={nordstrom}></img>
           <h3>
           React | CSS Modules | Express | MongoDB
           </h3>

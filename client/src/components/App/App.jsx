@@ -10,7 +10,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: 1024
+      width: window.innerWidth
     };
     this.handleWidth = this.handleWidth.bind(this);
   }
@@ -21,7 +21,7 @@ export default class App extends Component {
   }
 
   handleWidth() {
-    this.setState({ width: window.innerWidth });
+    this.setState({ width: window.innerWidth }, () => console.log(this.state.width));
   }
 
   render() {
@@ -30,8 +30,8 @@ export default class App extends Component {
         <Header width={this.state.width}/>
         <About width={this.state.width}/>
         <Applications width={this.state.width}/>
-        {/* <TechStack width={this.state.width}/>
-        <ContactMe width={this.state.width}/> */}
+        <TechStack width={this.state.width}/>
+        <ContactMe width={this.state.width}/>
       </div>
     )
   }

@@ -93,6 +93,14 @@ $hr-black: #2b292b;
   }
 }
 
+.smallIconLinkList {
+  @extend .iconLinkList;
+  li {
+    font-size: 40px;
+    margin: 0 15px;
+  }
+}
+
 
 .github {
   &:hover {
