@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import style from './Header.scss';
-import resume from './imgs/Resume.pdf'
+import resume from '../Header/imgs/Resume.pdf';
 
 export default class Header extends Component {
   constructor(props) {
